@@ -3,9 +3,15 @@ package com.kys.algorithm.codility;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 
 public class CyclicRotation {
     public int[] solution(int[] A, int K) {
+
+        if(Objects.isNull(A) || A.length == 0){
+            return new int[0];
+        }
+
         // write your code in Java SE 8
         LinkedList<Integer> nums = new LinkedList<>();
 
