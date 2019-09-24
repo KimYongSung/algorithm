@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.kys'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+[compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile("org.assertj:assertj-core:3.11.1")
+}
