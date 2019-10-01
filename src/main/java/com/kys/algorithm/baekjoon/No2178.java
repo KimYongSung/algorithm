@@ -102,7 +102,7 @@ public class No2178 {
 
     class Explorer implements Comparable<Explorer>{
 
-        int moveCount;
+        final int moveCount;
         final int N;
         final int M;
 
