@@ -1,11 +1,9 @@
 package com.kys.algorithm.hackerrank;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Scanner;
 
 public class BigSorting {
 
@@ -38,8 +36,6 @@ public class BigSorting {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        //BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
@@ -51,18 +47,6 @@ public class BigSorting {
         }
 
         String[] result = bigSorting(unsorted);
-
-        /*for (int i = 0; i < result.length; i++) {
-            bufferedWriter.write(result[i]);
-
-            if (i != result.length - 1) {
-                bufferedWriter.write("\n");
-            }
-        }
-
-        bufferedWriter.newLine();
-
-        bufferedWriter.close();*/
 
         StringBuilder strBuilder = new StringBuilder();
 
