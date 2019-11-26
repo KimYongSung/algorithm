@@ -1,6 +1,9 @@
 package com.kys.algorithm;
 
 import org.junit.Test;
+
+import java.util.LinkedList;
+
 import static org.assertj.core.api.Assertions.*;
 
 public class WordChangeTest {
