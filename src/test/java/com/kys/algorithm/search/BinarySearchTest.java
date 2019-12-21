@@ -31,4 +31,16 @@ public class BinarySearchTest {
 
         assertThat(index).isEqualTo(9);
     }
+
+    @Test
+    public void case03(){
+
+        int[] input = {7, 8, 1 , 2 ,5 , 9, 4, 3, 6, 0};
+
+        Arrays.sort(input);
+
+        int index = BinarySearch.whileSearch(input, 11);
+
+        assertThat(index).isEqualTo(-1);
+    }
 }
