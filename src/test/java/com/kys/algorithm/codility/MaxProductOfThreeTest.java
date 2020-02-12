@@ -15,4 +15,14 @@ public class MaxProductOfThreeTest {
 
         assertThat(result).isEqualTo(60);
     }
+
+    @Test
+    public void case02(){
+
+        MaxProductOfThree maxProductOfThree = new MaxProductOfThree();
+
+        int result = maxProductOfThree.solution(new int[]{ -5, -5, 4, 5});
+
+        assertThat(result).isEqualTo(125);
+    }
 }

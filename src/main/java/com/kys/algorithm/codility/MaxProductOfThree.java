@@ -8,8 +8,10 @@ public class MaxProductOfThree {
 
         Arrays.sort(A);
 
-        int index =  A.length-1;
+        int rightValue = A[A.length-1] * A[A.length-2] * A[A.length-3];
 
-        return A[index] * A[index-1] * A[index-2];
+        int leftValue = A[0] * A[1] * A[A.length-1];
+
+        return Math.max(rightValue, leftValue);
     }
 }
